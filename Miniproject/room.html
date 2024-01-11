@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/less" href="assets/css/style.less">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navbar start -->
+      <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
+        <div class="container py-1">
+          <a class="navbar-brand order-lg-0 col pe-xl-5" href="#"><img src="assets/image/logo.png" alt=""></a>
+        <div class="dropdown order-lg-1">
+            <button class=" btn btn-blue nav-btn shadow"  role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                ACCOUNT
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                <li><a class="dropdown-item" href="reservation.html">My Reservation</a></li>
+                <li><a class="dropdown-item" href="index.html">Log out</a></li>
+              </ul>
+        </div>
+
+
+          <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-lg-5 ps-lg-5" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-lg-4">
+              <a class="nav-link" aria-current="page" href="home.html">HOME</a>
+              <a class="nav-link active" href="rooms.html">ROOM</a>
+              <a class="nav-link" href="gallery.html">GALLERY</a>
+              <a class="nav-link" href="about.html">ABOUT</a>
+              <a class="nav-link" href="contact.html">CONTACT US</a>  
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+
+
+  <div class="mt-5">&nbsp;</div>
+
+  <section class="container my-5">
+    <div class="row ">
+
+        <div class="col-lg-4 col-xl-3 col-md-12 shadow p-3 mx-auto checker">
+            <div>
+                
+            </div>
+            <center><h5 class="mb-4 mt-3">Check Room Availability</h5></center>
+            <div class="row align-items-end">
+                <div class="col-lg-12  col-md-3 mb-2">
+                    <label for="checkin" class="form-label " style="font-weight: 500;">Check in</label>
+                    <input type="date" class="form-control shadow-none" id="checkin"  value="2024-01-17">
+                  </div>
+
+                  <div class="col-lg-12  col-md-3 mb-2">
+                    <label for="checkin" class="form-label " style="font-weight: 500;">Check in</label>
+                    <input type="date" class="form-control shadow-none" id="checkin" value="2024-01-19">
+                  </div>
+                  <div class="col-lg-12  col-md-2 mb-2">
+                    <label for="adult" class="form-label" style="font-weight: 500;">Adult</label>
+                    <select class="form-select">
+                        <option value="1">0</option>
+                        <option value="2">1</option>
+                        <option value="3">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5" selected>5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="col-lg-12  col-md-2 mb-2 ">
+                    <label for="chhildren" class="form-label" style="font-weight: 500;">Children</label>
+                    <select class="form-select input">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5" selected>5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="col-lg-12  col-md-2 mb-2 ">
+                    <a href="room.html" class="btn btn-blue btn-h44 col-12" id="liveToastBtn">Search</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-8 container mx-auto">
+            <div class="mb-5">
+                <center>
+                  <hr>
+                  <h1>ROOM</h1>
+                </center>
+              </div> 
+
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-6 mx-auto d-flex justify-content-center mb-5">
+                    <div class="card shadow " style="width: 22rem;">
+                      <div class="img-hover">
+                        <img src="assets/image/room2.png" class="card-img-top img-hov image-fluid" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h6 class="card-title">Deluxe Room</h6>
+                        <p>Property Overview</p>
+                        <div class="row">
+                          <p class="col-6"><i class="fas fa-wifi"></i> WIFI</p>
+                          <p class="col-6"><i class="fas fa-wind"></i> Air Conditioner</p>
+                          <p class="col-6"><i class="fas fa-tv"></i> Television</p>
+                          <p class="col-6"><i class="fas fa-hot-tub"></i> Spa Suite</p>
+                          <p class="col-6">Guest<span class="badge">10</span></p>
+                          <p class="col-6"><i class="fa-solid fa-square-parking"></i> Free Parking</p>
+                        </div>
+                        <center>
+                          <p>₱ 4000 per day</p>
+                          <a class="btn btn-blue btn-book " href="selected.html">Book</a>
+                        </center>          
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6 mx-auto d-flex justify-content-center mb-5">
+                    <div class="card shadow " style="width: 22rem;">
+                      <div class="img-hover">
+                        <img src="assets/image/room3.png" class="card-img-top img-hov image-fluid" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h6 class="card-title">Deluxe Premier</h6>
+                        <p>Property Overview</p>
+                        <div class="row">
+                          <p class="col-6"><i class="fas fa-wifi"></i> WIFI</p>
+                          <p class="col-6"><i class="fas fa-wind"></i> Air Conditioner</p>
+                          <p class="col-6"><i class="fas fa-tv"></i> Television</p>
+                          <p class="col-6"><i class="fas fa-hot-tub"></i> Spa Suite</p>
+                          <p class="col-6">Guest<span class="badge">10</span></p>
+                          <p class="col-6"><i class="fa-solid fa-square-parking"></i> Free Parking</p>
+                        </div>
+                        <center>
+                          <p>₱ 4000 per day</p>
+                          <a class="btn btn-blue btn-book " href="selected.html">Book</a>
+                        </center>          
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6 mx-auto d-flex justify-content-center mb-5">
+                    <div class="card shadow " style="width: 22rem;">
+                      <div class="img-hover">
+                        <img src="assets/image/room5.png" class="card-img-top img-hov image-fluid" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h6 class="card-title">Family Room Wolseley</h6>
+                        <p>Property Overview</p>
+                        <div class="row">
+                          <p class="col-6"><i class="fas fa-wifi"></i> WIFI</p>
+                          <p class="col-6"><i class="fas fa-wind"></i> Air Conditioner</p>
+                          <p class="col-6"><i class="fas fa-tv"></i> Television</p>
+                          <p class="col-6"><i class="fas fa-hot-tub"></i> Spa Suite</p>
+                          <p class="col-6">Guest<span class="badge">12</span></p>
+                          <p class="col-6"><i class="fa-solid fa-square-parking"></i> Free Parking</p>
+                        </div>
+                        <center>
+                          <p>₱ 4000 per day</p>
+                          <a class="btn btn-blue btn-book " href="selected.html">Book</a>
+                        </center>          
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6 mx-auto d-flex justify-content-center mb-5">
+                    <div class="card shadow " style="width: 22rem;">
+                      <div class="img-hover">
+                        <img src="assets/image/room6.png" class="card-img-top img-hov image-fluid" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h6 class="card-title">Family Room Maisonette</h6>
+                        <p>Property Overview</p>
+                        <div class="row">
+                          <p class="col-6"><i class="fas fa-wifi"></i> WIFI</p>
+                          <p class="col-6"><i class="fas fa-wind"></i> Air Conditioner</p>
+                          <p class="col-6"><i class="fas fa-tv"></i> Television</p>
+                          <p class="col-6"><i class="fas fa-hot-tub"></i> Spa Suite</p>
+                          <p class="col-6">Guest<span class="badge">12</span></p>
+                          <p class="col-6"><i class="fa-solid fa-square-parking"></i> Free Parking</p>
+                        </div>
+                        <center>
+                          <p>₱ 4000 per day</p>
+                          <a class="btn btn-blue btn-book " href="selected.html">Book</a>
+                        </center>          
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+                <!-- <div class="col-xl-6  col-12 p-0 mx-auto">
+                    <center>
+                        <img src="assets/image/room1.jpg" alt="" class="image-fluid mx-auto">
+                    </center>        
+                </div>
+                <div class="col-xl-6 col-12 pt-4 col-lg-12 p-0 mx-auto shadow des p-3">
+                    <h6>Classic Room White</h6>
+                    <p>Property Overview</p>
+                    <div class="row">
+                      <p class="col-6"><i class="fas fa-wifi"></i> WIFI</p>
+                      <p class="col-6"><i class="fas fa-wind"></i> Air Conditioner</p>
+                      <p class="col-6"><i class="fas fa-tv"></i> Television</p>
+                      <p class="col-6"><i class="fas fa-hot-tub"></i> Spa Suite</p>
+                    </div>
+                    <p>Guest <span class="badge">10</span></p>
+                    <div  style="float:right">
+                        <p>₱ 4000 per day</p>
+                        <a class="btn btn-blue btn-book " data-bs-toggle="modal" data-bs-target="#signFirst">Book</a>
+                    </div>        
+                </div> -->
+
+             
+
+        </div>
+    </div>
+  </section>
+
+  <!-- feedback start -->
+  <div class="position-fixed position-fixed end-0  p-3 messege"><a data-bs-toggle="modal" data-bs-target="#messege"><img src="assets/image/feedback.png" alt=""></a></div>
+
+  <div class="modal fade" id="messege" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content container">
+        
+        <div class="modal-body">
+            <center>
+                <img class="mb-2" src="assets/image/logo-icon.png" alt=""><span class="title-sign">Give Feedback</span>
+            </center>  
+            <div class="mb-3 mt-5 col-12">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Please enter your email">
+            </div>
+            <div class="mb-3 mt-5 col-12">
+                <label for="feedback">How's your experience?</label>
+                 <textarea class="form-control" id="feedback" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-blue" data-bs-dismiss="modal" aria-label="Close"> Cancel</button>
+            <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#submit" data-bs-dismiss="modal">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal shadow-none modals fade" id="submit" tabindex="-1" aria-labelledby="submit" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+      <div class="modal-content bg-primary text-white"> 
+        <div class="modal-body row pb-0">
+          <h5 class="col-10 modal-title" id="exampleModalLabel text-center"><p>“Thanks so much for sharing your experience with us.”</p></h5>
+          <button type="button" class="btn-close col-2" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+<!-- feedback end -->
+
+<footer>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-12 col-md-6 col-xl-3 mt-sm-3 mt-md-0">
+        <h5 class="mb-3 ">Support</h5>
+        <ul class="list-unstyled">
+            <li class="mb-2"><a href="contact.html">> Contact us</a></li>
+            <li class="mb-2"><a href="terms.html">> Term & Condition</a></li>
+            <li class="mb-2"><a href="faq.html">> FAQ</a></li>
+            <li class="mb-2"><a href="about.html">> About us</a></li>
+        </ul>
+    </div>
+      <div class="col-12 col-md-6 con col-xl-3 mt-sm-3 mt-md-0">
+        <h5 class="row mb-3 ">Contact us</h5>
+        <div class="d-flex justify-content-start ">
+            <span><i class="fa-solid fa-map-location-dot fa-lg"></i> </span>
+            <span><p class="ms-2 f">99 Faustino St Punturin Valenzuela City</p>
+            </span>
+        </div>
+        <div class="d-flex justify-content-start ">
+            <span><i class="fa-solid fa-envelope fa-lg"></i></span>
+            <span><p class="ms-2 f">oriyami.support@gmail.com</p>
+            </span>
+        </div>
+        <div class="d-flex justify-content-start ">
+            <span><i class="fa-solid fa-phone fa-lg"></i></i> </span>
+            <span><p class="ms-2 f">0999-999-9999</p>
+            </span>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-3 mt-sm-3 mt-md-0">
+      <h5 class="row mb-3 ">Follow us</h5>
+      <ul class="list-unstyled d-flex">
+          <li><a href="http://www.facebook.com" class="fa-brands fa-facebook-f"></a></li>
+          <li><a href="http://www.twitter.com" class="fa-brands fa-twitter"></a></li>
+          <li><a href="http://www.instagram.com" class="fa-brands fa-instagram"></a></li>
+      </ul>    
+  </div>
+
+  <div class="col-12 col-md-6 col-xl-3 mt-sm-3 mt-md-0">
+    <h5 class="row m-0 mb-2">Let's keep in touch</h5>
+    <p>Sign up for our weekly email marketing newsletter and ORIYAMI updates.</p>
+    <form class="d-flex">
+        <input type="email" placeholder="Enter your email" class="form-control sub" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <button type="submit" class="btn btn-blue btn-subs">Subscribe</button>
+    </form>
+  </div>
+  
+    </div>
+    <hr class="hr">
+  <p class="pb-2 m-0 f text-center">© Oriyami Hotel. All Rights Reserved 2024. Site optimized by SEO Direct</p>
+  </div>
+</footer>
+
+    <!-- less -->
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
